@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    tools:ignore="ExtraText"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/olvidoContra"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginBottom="20dp"
+            android:text="Forgot your password?" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginTop="166dp"
+            android:adjustViewBounds="true"
+            android:background="#a6437b"
+            app:srcCompat="@drawable/ic_person_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="221dp"
+            android:layout_marginEnd="-8dp"
+            app:srcCompat="@android:drawable/ic_lock_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/sing"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:background="#a6437b"
+        android:text="SIGN IN"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <Button
+        android:layout_width="147dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:background="#a6437b"
+        android:text="REGISTER"
+        app:layout_constraintStart_toEndOf="@id/sing"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="273dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:text="Password"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="272dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:text="Username"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <org.sufficientlysecure.htmltextview.HtmlTextView
+        android:id="@+id/html_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+
+        />
+</LinearLayout>
